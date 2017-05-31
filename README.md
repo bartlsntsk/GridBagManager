@@ -23,9 +23,9 @@ Has its own GridBagManager object, which is then used in custom add methods. You
 just take quickAdd to add component exactly where gbc is pointed at, addNextX to insert component in next X or addNextY to insert
 component below. Contains abstract method createPanel() which has to be overridden.
 
-
-### class AbstractPanelManager (T extends AbstractGridBagPanel) extends AbstractGridBagPanel ###
-
+'''java
+### AbstractPanelManager (T extends AbstractGridBagPanel) extends AbstractGridBagPanel ###
+'''
 
 
 Has List(T) of panels it will be managing. Creates grid for many panels of the same type. Has its own GridBagManager object (inheritance).
