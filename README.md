@@ -23,7 +23,7 @@ Has its own GridBagManager object, which is then used in custom add methods. You
 just take quickAdd to add component exactly where gbc is pointed at, addNextX to insert component in next X or addNextY to insert
 component below. Contains abstract method createPanel() which has to be overridden.
 
-'''java
+'''
 ### AbstractPanelManager (T extends AbstractGridBagPanel) extends AbstractGridBagPanel ###
 '''
 
