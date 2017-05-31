@@ -18,6 +18,7 @@ public class DemoPanelManager extends AbstractPanelManager<DemoPanel> {
     public void createPanel() {
         gbm.setFill("HORIZONTAL"); //it is set to BOTH by default
         gbm.setWeights(1, 0); //weights are 0, 0 by default
+        gbm.setInsets(10, 10, 10, 10);
         
         int column = 0; //we want to set Y+=1 if we reach desired number of columns
         
