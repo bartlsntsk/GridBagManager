@@ -9,7 +9,7 @@ import java.util.List;
  * Basically it's creating a grid for panels of type T.
  * 
  * @author bartlsntsk
- * @param <T>
+ * @param <T> extends AbstractGridBagPanel
  */
 public abstract class AbstractPanelManager<T extends AbstractGridBagPanel> extends AbstractGridBagPanel {
 
@@ -22,7 +22,7 @@ public abstract class AbstractPanelManager<T extends AbstractGridBagPanel> exten
 
     /**
      *
-     * @param dataPanel
+     * @param dataPanel extends AbstractGridBagPanel
      */
     public void addPanel(T dataPanel) {
         panels.add(dataPanel);

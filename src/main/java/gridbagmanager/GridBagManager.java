@@ -124,10 +124,10 @@ public final class GridBagManager {
 
     /**
      *
-     * @param bottom
-     * @param left
-     * @param right
-     * @param top
+     * @param bottom int
+     * @param left int
+     * @param right int
+     * @param top int
      */
     public void setInsets(int bottom, int left, int right, int top) {
         this.insets.bottom = bottom;
@@ -149,7 +149,7 @@ public final class GridBagManager {
     /**
      * Sets anchor of GridBagConstraints gbc. NORTH,SOUTH,WEST,EAST,CENTER
      *
-     * @param anchor
+     * @param anchor string
      */
     public void setAnchor(String anchor) {
         switch (anchor) {
@@ -176,7 +176,7 @@ public final class GridBagManager {
     /**
      * Sets GridBagConstraints fill BOTH, VERTICAL, HORIZONTAL, NONE
      *
-     * @param fill
+     * @param fill string
      */
     public void setFill(String fill) {
         switch (fill) {
