@@ -15,7 +15,7 @@ import javax.swing.SwingUtilities;
  */
 public final class Demo extends JFrame {
 
-    GridBagManager gbm;
+    private GridBagManager gbm;
 
     public static void main(String[] args) {
         Demo demo = new Demo();
