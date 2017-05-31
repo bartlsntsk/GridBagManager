@@ -16,6 +16,6 @@ component below. Contains abstract method createPanel() which has to be overridd
 
 AbstractPanelManager (T extends AbstractGridBagPanel) extends AbstractGridBagPanel
 
-Has List(T) of panels it will be managing. Creates grid for many panels of the same type. It has its own GridBagManager object.
+Has List(T) of panels it will be managing. Creates grid for many panels of the same type. Has its own GridBagManager object (inheritance).
 createPanel() iterates over list of panels and puts them in a grid. You can think of it as GridLayout, but you will have more
 control of how panels are displayed.
