@@ -7,6 +7,8 @@ There are two abstract classes attached to GridBagManager, which is AbstractGrid
 
 '''java
 GridBagManager
+'''
+
 
 Declares and initializes its own GridBagLayout and GridBagConstraints objects, which can be retrieved when needed. 
 Provides methods altering GridBagConstraints fields in couple of different ways. You can modify them to suit your needs.
