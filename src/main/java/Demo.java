@@ -36,7 +36,7 @@ public final class Demo extends JFrame {
     public void createGUI() {
         DemoPanelManager demoPanelManager = new DemoPanelManager(); //creating DemoPanelManager
 
-        for (int i = 0; i < 6; i++) //injecting DemoPanels into DemoPanelManager
+        for (int i = 0; i < 32; i++) //injecting DemoPanels into DemoPanelManager
         {
             demoPanelManager.addPanel(new DemoPanel());
 
