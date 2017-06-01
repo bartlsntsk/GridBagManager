@@ -4,6 +4,10 @@ Class developed to wrap GridBagLayout and GridBagConstraintswith reducing boiler
 
 There are two abstract classes attached to GridBagManager, which is AbstractGridBagPanel and AbstractPanelManager, both utilizing GridBagManager and helping you in your journey with GridBagLayout.
 
+## Demo:
+
+![alt text](http://i.imgur.com/dYr1JCh.png)
+
 
 ### GridBagManager ###
 
@@ -25,8 +29,3 @@ component below. Contains abstract method createPanel() which has to be overridd
 Has List(T) of panels it will be managing. Creates grid for many panels of the same type. Has its own GridBagManager object (inheritance).
 createPanel() iterates over list of panels and puts them in a grid. You can think of it as GridLayout, but you will have more
 control of how panels are displayed.
-
-## Demo:
-
-
-![alt text](http://i.imgur.com/dYr1JCh.png)
