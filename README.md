@@ -1,6 +1,6 @@
 # GridBagManager
 
-Class developed to wrap GridBagLayout and GridBagConstraintswith reducing boilerplate code amount in mind.
+Class developed to wrap GridBagLayout and GridBagConstraints with reducing boilerplate code amount in mind.
 
 There are two abstract classes attached to GridBagManager, which is AbstractGridBagPanel and AbstractPanelManager, both utilizing GridBagManager and helping you in your journey with GridBagLayout.
 
