@@ -29,7 +29,7 @@ public final class GridBagManager {
     private void initGridBag() {
         this.gridBagLayout = new GridBagLayout();
         this.gbc = new GridBagConstraints();
-        
+
         this.insets = new Insets(0, 0, 0, 0);
 
         this.gbc.anchor = GridBagConstraints.NORTH;
@@ -80,12 +80,17 @@ public final class GridBagManager {
     public void setY(int y) {
         this.gbc.gridy = y;
     }
-    
-    public void setXRelative(){
+
+    public void setXY(int x, int y) {
+        this.gbc.gridx = x;
+        this.gbc.gridy = y;
+    }
+
+    public void setXRelative() {
         this.gbc.gridx = GridBagConstraints.RELATIVE;
     }
-    
-    public void setYRelative(){
+
+    public void setYRelative() {
         this.gbc.gridx = GridBagConstraints.RELATIVE;
     }
 
@@ -137,7 +142,7 @@ public final class GridBagManager {
     }
 
     /**
-     *Sets insets to 0,0,0,0
+     * Sets insets to 0,0,0,0
      */
     public void resetInsets() {
         this.insets.bottom = 0;
@@ -195,5 +200,18 @@ public final class GridBagManager {
             default:
                 break;
         }
+    }
+
+    public int getX() {
+        return this.gbc.gridx;
+    }
+
+    public int getY() {
+        return this.gbc.gridy;
+    }
+
+    public int[] getXY() {
+        int[] xy = {this.gbc.gridx, this.gbc.gridy};
+        return xy;
     }
 }
