@@ -26,7 +26,7 @@ Has List(T) of panels it will be managing. Creates grid for many panels of the s
 createPanel() iterates over list of panels and puts them in a grid. You can think of it as GridLayout, but you will have more
 control of how panels are displayed.
 
-##Demo:
+## Demo:
 
 
 ![alt text](http://i.imgur.com/dYr1JCh.png)
