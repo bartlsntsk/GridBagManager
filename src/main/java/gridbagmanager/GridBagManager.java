@@ -93,6 +93,15 @@ public final class GridBagManager {
     public void setYRelative() {
         this.gbc.gridx = GridBagConstraints.RELATIVE;
     }
+    
+    /**
+     *Jump to next X=0, Y++
+     */
+    public void jumpToNextRow ()
+    {
+        this.gbc.gridx=0;
+        this.gbc.gridy+=1;
+    }
 
     public void setGridspan(int gridwidth, int gridheight) {
         this.gbc.gridwidth = gridwidth;
