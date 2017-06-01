@@ -5,7 +5,7 @@ import java.awt.Component;
 import javax.swing.JPanel;
 
 /**
- * 
+ *
  *
  * @author bartlsntsk
  */
@@ -37,6 +37,37 @@ public abstract class AbstractGridBagPanel extends JPanel {
         gbm.increaseX();
         gbm.increaseY();
         this.add(comp, gbm.getGbc());
+    }
+
+    /**
+     *Adds component at desired (X,Y), leaving GridBagConstraints pointed at it
+     * 
+     * @param comp component
+     * @param x int
+     * @param y int
+     */
+    public void addAtXY(Component comp, int x, int y) {
+        gbm.setX(x);
+        gbm.setY(y);
+        this.add(comp, gbm.getGbc());
+    }
+
+    /**
+     *Method jumps to desired (X,Y) coords, then returns
+     * to previous location
+     * 
+     * @param comp component
+     * @param x int
+     * @param y int
+     */
+    public void addJumpXY(Component comp, int x, int y) {
+        int[] previousCoords = gbm.getXY();
+        
+        gbm.setX(x);
+        gbm.setY(y);
+        this.add(comp, gbm.getGbc());
+        
+        gbm.setXY(previousCoords[0], previousCoords[1]);
     }
 
     public abstract void createPanel();
