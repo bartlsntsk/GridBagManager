@@ -1,6 +1,5 @@
 package gridbagmanager.abstractpanel;
 
-import gridbagmanager.abstractpanel.AbstractGridBagPanel;
 import java.util.ArrayList;
 import java.util.List;
 
