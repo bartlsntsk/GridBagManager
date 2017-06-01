@@ -27,4 +27,4 @@ createPanel() iterates over list of panels and puts them in a grid. You can thin
 control of how panels are displayed.
 
 
-![alt text](http://imgur.com/a/Kkdyk)
+![alt text](http://i.imgur.com/dYr1JCh.png)
