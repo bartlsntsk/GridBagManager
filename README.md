@@ -4,6 +4,8 @@ Class developed to wrap GridBagLayout and GridBagConstraints with reducing boile
 
 There are two abstract classes attached to GridBagManager, which is AbstractGridBagPanel and AbstractPanelManager, both utilizing GridBagManager and helping you in your journey with GridBagLayout.
 
+Go to releases to get .jar file!
+
 ## Demo:
 
 ![alt text](http://i.imgur.com/dYr1JCh.png)
