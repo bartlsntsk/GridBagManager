@@ -33,8 +33,20 @@ sourceSets {
     }
 }
 
+task jarLibrary (dependsOn: classes, type: Jar){
+    baseName = 'GridBagManager'
+    manifest = project.manifest{
+        attributes("Implementation-Title": "GridBagMaster",
+                   "Implementation-Version": version,
+                   "Build-version": "userbuild",
+                   "Created-By":"bartlsntsk")
+    }
 
-task jarLibrary(dependsOn: classes, type: Jar){
+    from sourceSets.gridbagmanager.output
+}
+
+
+task jarBuildLibrary(dependsOn: classes, type: Jar){
     
     def versionPropsFile = file('version.properties')
     def Properties versionProps = new Properties()
@@ -54,8 +66,10 @@ task jarLibrary(dependsOn: classes, type: Jar){
     manifest = project.manifest{
         attributes("Implementation-Title": "GridBagMaster",
                    "Implementation-Version": version,
-                   "Build-version": "build"+versionProps['VERSION_BUILD'].toInteger())
+                   "Build-version": "build"+versionProps['VERSION_BUILD'].toInteger(),
+        "Created-By":"bartlsntsk")
     }
 
     from sourceSets.gridbagmanager.output
 }
+
