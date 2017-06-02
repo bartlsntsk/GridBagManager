@@ -45,8 +45,7 @@ task jarLibrary (dependsOn: classes, type: Jar){
     from sourceSets.gridbagmanager.output
 }
 
-
-task jarBuildLibrary(dependsOn: classes, type: Jar){
+/*task jarBuildLibrary(dependsOn: classes, type: Jar){
     
     def versionPropsFile = file('version.properties')
     def Properties versionProps = new Properties()
@@ -71,5 +70,4 @@ task jarBuildLibrary(dependsOn: classes, type: Jar){
     }
 
     from sourceSets.gridbagmanager.output
-}
-
+}*/
