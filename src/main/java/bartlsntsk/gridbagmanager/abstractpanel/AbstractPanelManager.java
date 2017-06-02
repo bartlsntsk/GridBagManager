@@ -1,4 +1,4 @@
-package gridbagmanager.abstractpanel;
+package bartlsntsk.gridbagmanager.abstractpanel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,6 +9,7 @@ import java.util.List;
  * 
  * @author bartlsntsk
  * @param <T> extends AbstractGridBagPanel
+ * 
  */
 public abstract class AbstractPanelManager<T extends AbstractGridBagPanel> extends AbstractGridBagPanel {
 

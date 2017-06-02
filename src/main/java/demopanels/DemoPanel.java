@@ -1,6 +1,6 @@
 package demopanels;
 
-import gridbagmanager.abstractpanel.AbstractGridBagPanel;
+import bartlsntsk.gridbagmanager.abstractpanel.AbstractGridBagPanel;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JTextField;

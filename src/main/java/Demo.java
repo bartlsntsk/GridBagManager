@@ -2,7 +2,7 @@
 import demopanels.DemoPanel;
 import demopanels.DemoButtonPanel;
 import demopanels.DemoPanelManager;
-import gridbagmanager.GridBagManager;
+import bartlsntsk.gridbagmanager.GridBagManager;
 import java.awt.Color;
 import javax.swing.BorderFactory;
 import javax.swing.JFrame;

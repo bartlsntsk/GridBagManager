@@ -1,4 +1,4 @@
-package gridbagmanager;
+package bartlsntsk.gridbagmanager;
 
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;

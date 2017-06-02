@@ -1,6 +1,6 @@
-package gridbagmanager.abstractpanel;
+package bartlsntsk.gridbagmanager.abstractpanel;
 
-import gridbagmanager.GridBagManager;
+import bartlsntsk.gridbagmanager.GridBagManager;
 import java.awt.Component;
 import javax.swing.JPanel;
 
@@ -11,7 +11,7 @@ import javax.swing.JPanel;
  */
 public abstract class AbstractGridBagPanel extends JPanel {
 
-    public GridBagManager gbm;
+    protected GridBagManager gbm;
 
     public AbstractGridBagPanel() {
         super();
