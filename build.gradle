@@ -5,6 +5,8 @@ sourceCompatibility = '1.8'
 
 mainClassName = 'Demo'
 
+version = 'v0.1'
+
 if (!hasProperty('mainClass')) {
     ext.mainClass = 'Demo'
 }
@@ -15,4 +17,45 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.10'
+}
+
+
+
+sourceSets {
+    gridbagmanager {
+        java {
+            srcDirs = ['src/main/java/bartlsntsk/']
+        }
+        resources {
+
+        }
+        compileClasspath += sourceSets.main.runtimeClasspath
+    }
+}
+
+
+task jarLibrary(dependsOn: classes, type: Jar){
+    
+    def versionPropsFile = file('version.properties')
+    def Properties versionProps = new Properties()
+    if (versionPropsFile.canRead()) {
+        versionProps.load(new FileInputStream(versionPropsFile))
+
+        def code = versionProps['VERSION_BUILD'].toInteger() + 1
+
+        versionProps['VERSION_BUILD']=code.toString()
+        versionProps.store(versionPropsFile.newWriter(), null)
+    }
+    else {
+        throw new GradleException("Could not read version.properties!")
+    }
+
+    baseName = 'GridBagManager'
+    manifest = project.manifest{
+        attributes("Implementation-Title": "GridBagMaster",
+                   "Implementation-Version": version,
+                   "Build-version": "build"+versionProps['VERSION_BUILD'].toInteger())
+    }
+
+    from sourceSets.gridbagmanager.output
 }
