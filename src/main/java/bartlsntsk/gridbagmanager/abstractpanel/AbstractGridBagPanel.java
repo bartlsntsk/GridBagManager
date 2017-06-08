@@ -15,7 +15,16 @@ public abstract class AbstractGridBagPanel extends JPanel {
 
     public AbstractGridBagPanel() {
         super();
-        gbm = new GridBagManager();
+        this.gbm = new GridBagManager();
+        this.setGridBagManagerLayout();
+    }
+
+    public GridBagManager getGbm() {
+        return gbm;
+    }
+    
+    private void setGridBagManagerLayout()
+    {
         this.setLayout(gbm.getGridBagLayout());
     }
 
@@ -40,7 +49,7 @@ public abstract class AbstractGridBagPanel extends JPanel {
     }
 
     /**
-     *Adds component at desired (X,Y), leaving GridBagConstraints pointed at it
+     *Adds component at desired (X,Y), leaving GridBagConstraints pointed at it.
      * 
      * @param comp component
      * @param x int
@@ -54,7 +63,7 @@ public abstract class AbstractGridBagPanel extends JPanel {
 
     /**
      *Method jumps to desired (X,Y) coords, then returns
-     * to previous location
+     * to previous location.
      * 
      * @param comp component
      * @param x int
@@ -70,5 +79,8 @@ public abstract class AbstractGridBagPanel extends JPanel {
         gbm.setXY(previousCoords[0], previousCoords[1]);
     }
 
+    /**
+     *Create panel with its components using GridBagManager.
+     */
     public abstract void createPanel();
 }
