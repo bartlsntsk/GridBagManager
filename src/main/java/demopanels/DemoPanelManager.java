@@ -41,5 +41,4 @@ public class DemoPanelManager extends AbstractPanelManager<DemoPanel> {
 
         this.setBackground(Color.LIGHT_GRAY);
     }
-
 }
