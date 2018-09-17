@@ -1,12 +1,12 @@
 package demopanels;
 
-import bartlsntsk.gridbagmanager.abstractpanel.AbstractGridBagPanel;
+import bigby.gridbagmanager.abstractpanel.AbstractGridBagPanel;
 import java.awt.Color;
 import javax.swing.JButton;
 
 /**
  *
- * @author bartlsntsk
+ * @author bigby
  */
 public final class DemoButtonPanel extends AbstractGridBagPanel {
 

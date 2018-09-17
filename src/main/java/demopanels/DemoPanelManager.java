@@ -1,12 +1,12 @@
 package demopanels;
 
-import bartlsntsk.gridbagmanager.abstractpanel.AbstractPanelManager;
+import bigby.gridbagmanager.abstractpanel.AbstractPanelManager;
 import java.awt.Color;
 import javax.swing.JLabel;
 
 /**
  *
- * @author bartlsntsk
+ * @author bigby
  */
 public class DemoPanelManager extends AbstractPanelManager<DemoPanel> {
 

@@ -1,8 +1,7 @@
-
 import demopanels.DemoPanel;
 import demopanels.DemoButtonPanel;
 import demopanels.DemoPanelManager;
-import bartlsntsk.gridbagmanager.GridBagManager;
+import bigby.gridbagmanager.GridBagManager;
 import java.awt.Color;
 import javax.swing.BorderFactory;
 import javax.swing.JFrame;
@@ -11,7 +10,7 @@ import javax.swing.SwingUtilities;
 
 /**
  *
- * @author bartlsntsk
+ * @author bigby
  */
 public final class Demo extends JFrame {
 
