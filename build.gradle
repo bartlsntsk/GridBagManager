@@ -53,3 +53,10 @@ task userJar (dependsOn: compileJava, type: Jar) {
     from sourceSets.main.output.classesDir
     include '/bartlsntsk/**/*'
 }
+
+javadoc {
+    
+    source = sourceSets.main.allJava
+    classpath = configurations.compile
+    include '/bartlsntsk/*'
+}

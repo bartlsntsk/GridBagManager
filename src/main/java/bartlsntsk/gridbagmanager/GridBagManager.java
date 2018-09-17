@@ -43,6 +43,7 @@ public final class GridBagManager {
         this.gbc.weightx = 0;
         this.gbc.weighty = 0;
         this.gbc.insets = insets;
+
     }
 
     public GridBagLayout getGridBagLayout() {
@@ -183,7 +184,7 @@ public final class GridBagManager {
                 this.gbc.anchor = GridBagConstraints.CENTER;
                 break;
             default:
-                break;
+                break; //TODO: anchor not found error handling
         }
     }
 
